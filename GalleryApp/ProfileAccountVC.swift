@@ -7,14 +7,14 @@
 
 import UIKit
 
-class ProfileAccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class ProfileAccountVC: UIViewController {
 
     
     @IBOutlet weak var image: UIImageView!
     
     @IBOutlet weak var CollectionImage: UICollectionView!
     
-    var imageArr = ["image1","image2","image3","image4"]
+    
     
     
     override func viewDidLoad() {
@@ -35,23 +35,6 @@ class ProfileAccountVC: UIViewController,UICollectionViewDelegate,UICollectionVi
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageArr.count
-    }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ProfileCollectionViewCell
-        
-        cell.ImageCell?.image = UIImage(named: imageArr[indexPath.row])
-        
-        return cell
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width/2 - 30
-        let height = width + (width * 0.33)
-        
-        return CGSize(width: width, height: height)
-    }
 
 }
