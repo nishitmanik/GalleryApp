@@ -6,15 +6,16 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class ProfileAccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class ProfileAccountVC: UIViewController {
 
     
     @IBOutlet weak var image: UIImageView!
     
-    @IBOutlet weak var CollectionImage: UICollectionView!
+   
     
-    var imageArr = ["image1","image2","image3","image4"]
+   
     
     
     override func viewDidLoad() {
@@ -28,30 +29,33 @@ class ProfileAccountVC: UIViewController,UICollectionViewDelegate,UICollectionVi
     
     @IBAction func LogoutAccount(_ sender: UIButton) {
         
-        showAlert(title: "Log out", message: "Are you sure you want to Logout", ViewController: self)
+        showalert(title: "Log out", message: "Are you sure you want to Logout", ViewController: self) { [unowned self] (action) in
+            
+            if action.title == "Yes" {
+                
+                do {
+                    try Auth.auth().signOut()
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginScreenVC") as! LoginScreenVC
+                    self.navigationController?.pushViewController(vc, animated: true)
+                } catch {
+                    showAlert(title: "Error", message: "Not LogOut", ViewController: self)
+                    print("Error signing out: \(error.localizedDescription)")
+                }
+            }
+        }
         
-//        let VC = self.storyboard?.instantiateViewController(identifier: "LoginScreenVC") as! LoginScreenVC
-//        self.navigationController?.pushViewController(VC, animated: true)
+        
     }
     
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageArr.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ProfileCollectionViewCell
-        
-        cell.ImageCell?.image = UIImage(named: imageArr[indexPath.row])
-        
-        return cell
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width/2 - 30
-        let height = width + (width * 0.33)
-        
-        return CGSize(width: width, height: height)
-    }
+    func showalert(title: String, message: String, ViewController: UIViewController, completion: ((UIAlertAction) -> Void)? = nil) {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
+            let yesAction = UIAlertAction(title: "Yes", style: .default, handler: completion)
+            let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
+
+            alert.addAction(yesAction)
+            alert.addAction(noAction)
+
+            ViewController.present(alert, animated: true, completion: nil)
+        }
 }
