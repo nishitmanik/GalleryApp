@@ -35,7 +35,7 @@ class ImageScreenVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
     }
 
     func getImage() {
-        guard let url = URL(string: "https://picsum.photos/v2/list?page=1&limit=10") else {
+        guard let url = URL(string: "https://picsum.photos/v2/list?page=1&limit=20") else {
             print("Invalid URL")
             return
         }
