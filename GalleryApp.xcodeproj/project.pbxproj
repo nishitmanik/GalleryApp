@@ -21,7 +21,6 @@
 		6D9BE8DF2B580BCD00164836 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9BE8DE2B580BCD00164836 /* AlertManager.swift */; };
 		6D9BE8E12B580C1800164836 /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9BE8E02B580C1800164836 /* LoginScreenVC.swift */; };
 		6D9BE8E32B580C4000164836 /* CreateaccountVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9BE8E22B580C4000164836 /* CreateaccountVc.swift */; };
-		6DACA5972B5A3042000AC551 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACA5962B5A3042000AC551 /* ProfileCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +41,6 @@
 		6D9BE8DE2B580BCD00164836 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		6D9BE8E02B580C1800164836 /* LoginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenVC.swift; sourceTree = "<group>"; };
 		6D9BE8E22B580C4000164836 /* CreateaccountVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateaccountVc.swift; sourceTree = "<group>"; };
-		6DACA5962B5A3042000AC551 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		8FD1D0E5A92976CF7A8C2934 /* Pods-GalleryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GalleryApp.debug.xcconfig"; path = "Target Support Files/Pods-GalleryApp/Pods-GalleryApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +97,6 @@
 				6D7C71282B5928DD00A06B2C /* ImageScreenVC.swift */,
 				6D76D5882B595E53005C6CB9 /* ImageTableViewCell.swift */,
 				6D7C712A2B59340C00A06B2C /* ProfileAccountVC.swift */,
-				6DACA5962B5A3042000AC551 /* ProfileCollectionViewCell.swift */,
 				6D9BE8D52B580BA900164836 /* LaunchScreen.storyboard */,
 				6D9BE8D82B580BA900164836 /* Info.plist */,
 				6D7C712C2B593DCD00A06B2C /* GoogleService-Info.plist */,
@@ -235,7 +232,6 @@
 				6D9BE8E32B580C4000164836 /* CreateaccountVc.swift in Sources */,
 				6D9BE8E12B580C1800164836 /* LoginScreenVC.swift in Sources */,
 				6D76D5892B595E53005C6CB9 /* ImageTableViewCell.swift in Sources */,
-				6DACA5972B5A3042000AC551 /* ProfileCollectionViewCell.swift in Sources */,
 				6D7C71292B5928DD00A06B2C /* ImageScreenVC.swift in Sources */,
 				6D9BE8DF2B580BCD00164836 /* AlertManager.swift in Sources */,
 				6D9BE8CF2B580BA800164836 /* ViewController.swift in Sources */,

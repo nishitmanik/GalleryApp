@@ -60,20 +60,48 @@ class LoginScreenVC: UIViewController {
     @IBAction func GoogleSignIn(_ sender: UIButton) {
         
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-                
-        let config = GIDConfiguration(clientID: clientID)
-                
-        GIDSignIn.sharedInstance.configuration = config
 
-        GIDSignIn.sharedInstance.signIn(withPresenting: self)
-    }
-    func sign(_ signIn: GIDSignIn!,didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        print("User email: \(user.profile?.email ?? "No Email")")
-    }
-    
-    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        
-        return GIDSignIn.sharedInstance.handle(url)
+                    let config = GIDConfiguration(clientID: clientID)
+
+                    GIDSignIn.sharedInstance.configuration = config
+
+                    GIDSignIn.sharedInstance.signIn(withPresenting: self)
+
+                    GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
+                        guard error == nil else {
+                            showAlert(title: "Error", message: "Incorrect Email or Password", ViewController: self)
+                            return
+                        }
+
+                        guard let user = result?.user,
+                            let idToken = user.idToken?.tokenString
+                        else {
+                        showAlert(title: "Ok", message: "Received Mail to Confirm Login", ViewController: self)
+                            print("Log in done")
+                            return
+                        }
+
+                        let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                                       accessToken: user.accessToken.tokenString)
+
+                        Auth.auth().signIn(with: credential) { (authResult, error) in
+                                    if let error = error {
+                                        showAlert(title: "Error", message: error.localizedDescription, ViewController: self)
+                                        print("Firebase authentication error: \(error.localizedDescription)")
+                                        return
+                                    }
+                            else if authResult != nil {
+                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ImageScreen") as! ImageScreenVC
+                                self.navigationController?.pushViewController(vc, animated: true)
+                                print("Log in done")
+                                
+                            }
+
+                                    
+                                    print("Successfully signed in with Firebase")
+                                   
+                                }
+                    }
         
         
     }
