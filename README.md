@@ -1,4 +1,4 @@
-# Galley-Application
+# GalleryApp
 I have Created Dyanmic WallPaper Images with IOS Application using Xcode.
 Install this Dependencies :
   pod 'cocoapods'
