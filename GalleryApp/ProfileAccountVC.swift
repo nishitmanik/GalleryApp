@@ -21,9 +21,11 @@ class ProfileAccountVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        image.layer.borderWidth = 2
-        image.layer.borderColor = CGColor.init(red: 0, green: 0, blue: 2, alpha: 0)
-        image.layer.cornerRadius = 20
+        image.layer.borderWidth = 3
+        image.layer.borderColor = UIColor.blue.cgColor
+        image.layer.cornerRadius = image.frame.size.width / 2
+        image.clipsToBounds = true
+        image.layer.masksToBounds = false
     }
     
     
