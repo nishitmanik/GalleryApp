@@ -281,7 +281,7 @@
         <!--ImageScreen-->
         <scene sceneID="f4e-VG-NMi">
             <objects>
-                <viewController storyboardIdentifier="ImageScreen" title="ImageScreen" id="WVp-D5-0Qm" customClass="ImageScreenVC" customModule="GalleryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ImageScreen" id="WVp-D5-0Qm" customClass="ImageScreenVC" customModule="GalleryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NlR-bH-Cht">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
