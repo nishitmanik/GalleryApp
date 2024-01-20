@@ -11,7 +11,7 @@
         <!--LoginScreenVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LoginScreenVC" id="BYZ-38-t0r" customClass="LoginScreenVC" customModule="GalleryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginScreen" title="LoginScreenVC" id="BYZ-38-t0r" customClass="LoginScreenVC" customModule="GalleryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,7 +281,7 @@
         <!--ImageScreen-->
         <scene sceneID="f4e-VG-NMi">
             <objects>
-                <viewController title="ImageScreen" id="WVp-D5-0Qm" customClass="ImageScreenVC" customModule="GalleryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageScreen" title="ImageScreen" id="WVp-D5-0Qm" customClass="ImageScreenVC" customModule="GalleryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NlR-bH-Cht">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
