@@ -55,13 +55,6 @@ class ImageScreenVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
 
         dataTask.resume()
     }
-    
-    
-    
-    
-    
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrImage.count
     }
@@ -161,9 +154,7 @@ class ImageScreenVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
 
 struct MainModelImages: Codable {
     let id: String
-    let author: String
     let width: Int
     let height: Int
-    let url: String
     let download_url: String?
 }

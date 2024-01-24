@@ -47,25 +47,11 @@ class CreateaccountVc: UIViewController {
                     showAlert(title: "Error", message: err.localizedDescription, ViewController: self)
                 } else if let result = authResult {
                     showAlert(title: "Done", message: "Go to Login page ", ViewController: self)
-//                    let vc = self?.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as! DeleteVC
-//                             self?.navigationController?.pushViewController(vc, animated: true)
 
-                    
                 }
-                
-              
             }
         }
         
     }
     
-
-    @IBAction func AlreadyAccount(_ sender: UIButton) {
-        
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginScreenVC") as! LoginScreenVC
-        
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-
 }

@@ -47,7 +47,7 @@ class LoginScreenVC: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             guard let strongSelf = self else { return }
             if authResult != nil {
-//                showAlert(title: "Log in Done", message: "Correct Password", ViewController: strongSelf)
+//
                 let vc = self?.storyboard?.instantiateViewController(withIdentifier: "ImageScreen") as! ImageScreenVC
                          self?.navigationController?.pushViewController(vc, animated: true)
                 print("Log in done")
@@ -76,7 +76,6 @@ class LoginScreenVC: UIViewController {
                         guard let user = result?.user,
                             let idToken = user.idToken?.tokenString
                         else {
-                        showAlert(title: "Ok", message: "Received Mail to Confirm Login", ViewController: self)
                             print("Log in done")
                             return
                         }
@@ -129,14 +128,5 @@ class LoginScreenVC: UIViewController {
         imgBg.image = UIImage(named: imageName)
         
     }
-    
-    @IBAction func ForgotPassword(_ sender: UIButton) {
-        let VC = self.storyboard?.instantiateViewController(identifier: "CreateScreenVC") as! CreateaccountVc
-        
-        self.navigationController?.pushViewController(VC, animated: true)
-        
-        
-    }
-    
     
 }
