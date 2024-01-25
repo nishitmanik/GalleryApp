@@ -65,12 +65,16 @@ class LoginScreenVC: UIViewController {
 
                     GIDSignIn.sharedInstance.configuration = config
 
-                    GIDSignIn.sharedInstance.signIn(withPresenting: self)
 
                     GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
-                        guard error == nil else {
-                            showAlert(title: "Error", message: "Incorrect Email or Password", ViewController: self)
+                        if result != nil  {
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ImageScreen") as! ImageScreenVC
+                                self.navigationController?.pushViewController(vc, animated: true)
                             return
+                        }
+                       else if error != nil {
+                           showAlert(title: "Error", message: "Incorrect Account", ViewController: self)
+                           
                         }
 
                         guard let user = result?.user,
@@ -95,14 +99,8 @@ class LoginScreenVC: UIViewController {
                                 print("Log in done")
                                 
                             }
-
-                                    
-                                    print("Successfully signed in with Firebase")
-                                   
-                                }
-                    }
-        
-        
+            }
+        }
     }
     
 

@@ -30,7 +30,7 @@ class CreateaccountVc: UIViewController {
    
     
     @IBAction func Btnsign(_ sender: UIButton) {
-        print("jgaj ")
+
         if TxtName.text == "" || Txtpass.text == "" || Txtemail.text == "" ||
             txtConfirm.text == "" {
             showAlert(title: "Error", message: "Enter valid ", ViewController: self)

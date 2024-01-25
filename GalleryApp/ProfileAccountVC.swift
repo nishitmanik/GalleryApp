@@ -49,15 +49,5 @@ class ProfileAccountVC: UIViewController {
         
     }
     
-    func showalert(title: String, message: String, ViewController: UIViewController, completion: ((UIAlertAction) -> Void)? = nil) {
-            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-
-            let yesAction = UIAlertAction(title: "Yes", style: .default, handler: completion)
-            let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
-
-            alert.addAction(yesAction)
-            alert.addAction(noAction)
-
-            ViewController.present(alert, animated: true, completion: nil)
-        }
+    
 }
