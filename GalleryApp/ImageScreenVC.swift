@@ -56,6 +56,7 @@ class ImageScreenVC: UIViewController, UIScrollViewDelegate {
         currentPage = (currentPage + 1) % imageNames.count
         let offsetX = view.frame.width * CGFloat(currentPage)
         scrollView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
+        Pagecontrolview.currentPage = currentPage
     }
 
     // MARK: - UIScrollViewDelegate

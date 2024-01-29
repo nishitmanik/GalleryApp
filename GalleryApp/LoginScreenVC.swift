@@ -68,9 +68,7 @@ class LoginScreenVC: UIViewController {
 
                     GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
                         if result != nil  {
-                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ImageScreen") as! ImageScreenVC
-                                self.navigationController?.pushViewController(vc, animated: true)
-                            return
+
                         }
                        else if error != nil {
                            showAlert(title: "Error", message: "Incorrect Account", ViewController: self)

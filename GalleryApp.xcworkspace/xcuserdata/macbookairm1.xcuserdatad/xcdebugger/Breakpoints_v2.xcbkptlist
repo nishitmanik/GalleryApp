@@ -141,6 +141,162 @@
                   endingLineNumber = "70"
                   offsetFromSymbolStart = "88">
                </Location>
+               <Location
+                  uuid = "9E9E9F7F-98C4-4F03-BC1E-8B7126369218 - 4ec90611434546d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GalleryApp.LoginScreenVC.GoogleSignIn(__C.UIButton) -&gt; ()"
+                  moduleName = "GalleryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Desktop/GalleryApp%20copy/GalleryApp/LoginScreenVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "540">
+               </Location>
+               <Location
+                  uuid = "9E9E9F7F-98C4-4F03-BC1E-8B7126369218 - 1fa5b1635fcc0c96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.GIDSignInResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GalleryApp.LoginScreenVC.GoogleSignIn(__C.UIButton) -&gt; ()"
+                  moduleName = "GalleryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Desktop/GalleryApp%20copy/GalleryApp/LoginScreenVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "9E9E9F7F-98C4-4F03-BC1E-8B7126369218 - 77cb2c83423d7d0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.GIDSignInResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GalleryApp.LoginScreenVC.GoogleSignIn(__C.UIButton) -&gt; ()"
+                  moduleName = "GalleryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Desktop/GalleryApp%20copy/GalleryApp/LoginScreenVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C85B3B09-C9DF-4C95-825C-76A60F76FBCE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GalleryApp/LoginScreenVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "GoogleSignIn(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C85B3B09-C9DF-4C95-825C-76A60F76FBCE - 1fa5b1635fcc0203"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.GIDSignInResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GalleryApp.LoginScreenVC.GoogleSignIn(__C.UIButton) -&gt; ()"
+                  moduleName = "GalleryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Desktop/GalleryApp%20copy/GalleryApp/LoginScreenVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "808">
+               </Location>
+               <Location
+                  uuid = "C85B3B09-C9DF-4C95-825C-76A60F76FBCE - 1fa5b1635fcc0203"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.GIDSignInResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GalleryApp.LoginScreenVC.GoogleSignIn(__C.UIButton) -&gt; ()"
+                  moduleName = "GalleryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Desktop/GalleryApp%20copy/GalleryApp/LoginScreenVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "812">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80B318A4-1614-461D-8EB2-8C62A2C961A6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GalleryApp/LoginScreenVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "GoogleSignIn(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "80B318A4-1614-461D-8EB2-8C62A2C961A6 - 1fa5b1635fcc0359"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.GIDSignInResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GalleryApp.LoginScreenVC.GoogleSignIn(__C.UIButton) -&gt; ()"
+                  moduleName = "GalleryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Desktop/GalleryApp%20copy/GalleryApp/LoginScreenVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "1428">
+               </Location>
+               <Location
+                  uuid = "80B318A4-1614-461D-8EB2-8C62A2C961A6 - 77cb2c83423d7d0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.GIDSignInResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GalleryApp.LoginScreenVC.GoogleSignIn(__C.UIButton) -&gt; ()"
+                  moduleName = "GalleryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Desktop/GalleryApp%20copy/GalleryApp/LoginScreenVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "80B318A4-1614-461D-8EB2-8C62A2C961A6 - 1fa5b1635fcc0359"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.GIDSignInResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GalleryApp.LoginScreenVC.GoogleSignIn(__C.UIButton) -&gt; ()"
+                  moduleName = "GalleryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Desktop/GalleryApp%20copy/GalleryApp/LoginScreenVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "1432">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
