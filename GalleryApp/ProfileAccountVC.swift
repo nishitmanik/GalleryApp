@@ -37,8 +37,8 @@ class ProfileAccountVC: UIViewController {
                 
                 do {
                     try Auth.auth().signOut()
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginScreen") as! LoginScreenVC
-                    self.navigationController?.pushViewController(vc, animated: true)
+                    
+                    self.navigationController?.popToRootViewController(animated: true)
                 } catch {
                     showAlert(title: "Error", message: "Not LogOut", ViewController: self)
                     print("Error signing out: \(error.localizedDescription)")
