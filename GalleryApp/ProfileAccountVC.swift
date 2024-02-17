@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 
-class ProfileAccountVC: UIViewController {
+class ProfileAccountVC: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
     @IBOutlet weak var image: UIImageView!
@@ -21,11 +21,13 @@ class ProfileAccountVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        image.layer.borderWidth = 3
-        image.layer.borderColor = UIColor.blue.cgColor
-        image.layer.cornerRadius = image.frame.size.width / 2
+        image.layer.cornerRadius = image.bounds.width / 2
         image.clipsToBounds = true
-        image.layer.masksToBounds = false
+        
+        
+          let tapGesture = UITapGestureRecognizer(target: self, action: #selector(profileImageTapped))
+          image.isUserInteractionEnabled = true
+          image.addGestureRecognizer(tapGesture)
     }
     
     
@@ -49,5 +51,23 @@ class ProfileAccountVC: UIViewController {
         
     }
     
+
+
+    @objc func profileImageTapped() {
+        
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+
+   
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            image.image = pickedImage
+        }
+
+        dismiss(animated: true, completion: nil)
+    }
     
 }
